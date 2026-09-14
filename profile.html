@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sasmit - Mini Bio Card</title>
+    <title>Sasmit - Professional Profile</title>
   </head>
   <body style="background-color: rgb(12, 195, 240)">
     <header>
@@ -36,6 +36,13 @@
           width="240"
           height="240"
         />
+
+        <img
+          src="images/garden-photo.jpg"
+          alt="Sasmit working in the Maverick Food Garden"
+          width="240"
+          height="240"
+        />
       </section>
 
       <section id="skills">
@@ -56,37 +63,43 @@
           >GitHub profile</a
         >
       </p>
+
       <section id="experience">
         <h2>Experience</h2>
         <table>
-          <tr>
-            <th>Role</th>
-            <th>Organization</th>
-            <th>From</th>
-            <th>To</th>
-          </tr>
-          <tr>
-            <td>Maverick Food Garden Manager</td>
-            <td>Mankato Food Garden</td>
-            <td>Example Date</td>
-            <td>Example Date</td>
-          </tr>
-          <tr>
-            <td>Learning Community Coordinator</td>
-            <td>CSET Transfer CIS/Engineering Learning Communit</td>
-            <td>Example Date</td>
-            <td>Example Date</td>
-          </tr>
+          <thead>
+            <tr>
+              <th scope="col">Role</th>
+              <th scope="col">Organization</th>
+              <th scope="col">From</th>
+              <th scope="col">To</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Maverick Food Garden Manager</td>
+              <td>Mankato Food Garden</td>
+              <td>May 2026</td>
+              <td>Present</td>
+            </tr>
+            <tr>
+              <td>Learning Community Coordinator</td>
+              <td>CSET Transfer CIS/Engineering Learning Community</td>
+              <td>Aug 2025</td>
+              <td>Present</td>
+            </tr>
+          </tbody>
         </table>
       </section>
+
       <section id="contact">
         <h2>Contact</h2>
-        <form action="/submit" method="post" display>
+        <form action="/submit" method="post">
           <label for="name">Name</label>
-          <input type="text" id="name" required />
+          <input type="text" id="name" name="name" required />
 
           <label for="email">Email</label>
-          <input type="email" id="email" required />
+          <input type="email" id="email" name="email" required />
 
           <label for="phone">Phone Number</label>
           <input
@@ -94,6 +107,7 @@
             pattern="\d+"
             title="Make your phone number only numeric!"
             id="phone"
+            name="phone"
           />
 
           <label for="message">Message</label>
@@ -103,8 +117,37 @@
         </form>
       </section>
     </main>
+
     <footer>
-      <small> &copy; 2026 Sasmit</small>
+      <small>&copy; 2026 Sasmit</small>
+      <nav aria-label="Social links">
+        <ul>
+          <li>
+            <a
+              href="https://github.com/tsamitt"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/maverickfoodgarden"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@maverickfoodgarden</a
+            >
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
