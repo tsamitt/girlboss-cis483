@@ -1,0 +1,9 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    background-color: aqua;
+}
+h1, h2 {
+    color: green;
+    font-size: 32px;
+}
