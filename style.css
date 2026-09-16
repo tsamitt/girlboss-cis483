@@ -11,20 +11,25 @@ header {
     justify-content: space-between ;
     background-color:rgb(171, 170, 188);
     border-radius: 10px;
+    gap: 20px;
 }
 
 #nav-list {
     display: flex;
-    gap: 30px;    
+    gap: 30px;
+    margin: 20px;    
 }
 
 input:focus { 
     outline: 2px solid;
 }
+input:invalid {
+    outline-color: red;
+}
 
 input, textarea, select {
     box-sizing: border-box;
-    padding: 3px;
+    padding: 4px;
     border: 1px;
     border-radius: 10px;
     transition: border-color 0.15s, box-shadow 0.15;
@@ -41,12 +46,22 @@ input, textarea, select {
     flex-direction: column;
     gap: 16px;
 }
+
 #contact-submit{
     background-color: rgb(109, 107, 225);
     margin-top: 8px;
     padding: 8px;
     border-radius: 10px;
 }
+
 #contact-submit:hover {
     background-color: blueviolet;
+}
+
+td {
+    padding: 15px;
+}
+
+img {
+    background-color: black;
 }
